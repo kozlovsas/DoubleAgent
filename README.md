@@ -40,9 +40,13 @@ For more details, checkout our [technical](http://cybellum.com/doubleagentzero-d
 1. Clone/Download the DoubleAgent source code.
 2. Build the [main solution](https://github.com/Cybellum/DoubleAgent) twice, once in x86 and once in x64.
    This step is crucial as it creates both x86 and x64 versions of DoubleAgentDll.dll which is required in order to perform a successful installation.
+   
    NOTE: The project has been built from a deprecated Visual Studio version (2017) and used older build tools. 
+   
    To rectify this, open up the project in Visual Studio 2019, click "Project" at the top, and select "Retarget Solution".
+   
    Ensure the Windows 10 SDK is selected and that all three folders are selected, then click "Ok". The project will be upgraded and re-configured.
+   
    Tested on Windows 10 Version 1803, confirmed working.
 3. Copy the entire bin folder to the target machine.
 4. Execute the installer:
